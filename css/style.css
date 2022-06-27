@@ -50,18 +50,18 @@ body {
 }
 
 
-.conteiner{
-outline: 2px solid blueviolet;
-margin-left: auto;
-margin-right: auto;
-width:1200;
+.header-box{
 display: flex;
-align-items: center;
+width: 1200px;
+justify-content: space-around;
+
 }
 
-.logo-nav{
+.nav-box{
   display: flex;
+  width: auto;
 }
+
 
 .item{
   display: flex;
@@ -71,11 +71,11 @@ align-items: center;
   padding-right: 50px;
 }
 
-.header-contact{
+.contact-box{
   display: flex;
-  justify-items: flex-end;
-}
+justify-content: flex-end;
 
+}
 
 /* логотип */
 
