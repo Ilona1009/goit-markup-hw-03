@@ -9,18 +9,14 @@
   --black: #000000;
 }
 
-
-
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-
-
 
 h1,
 h2,
@@ -29,10 +25,8 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+  margin-top: 0;
 }
-
-
 
 body {
   background-color: var(--wite-color);
@@ -42,39 +36,41 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container{
+  width: 1200px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 
 .list {
-	list-style: none;
-	padding-left: 0;
-	margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-
-.header-box{
-display: flex;
-width: 1200px;
-justify-content: space-around;
-
+.header-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32p;
 }
 
-.nav-box{
+.nav-box {
   display: flex;
   width: auto;
 }
 
-
-.item{
+.item {
   display: flex;
   align-items: center;
 }
-.link:not(:last-child){
+.link:not(:last-child) {
   padding-right: 50px;
 }
 
-.contact-box{
+.contact-box {
   display: flex;
-justify-content: flex-end;
-
+  justify-content: flex-end;
 }
 
 /* логотип */
@@ -149,19 +145,27 @@ address {
   text-decoration: none;
 }
 
-
 /* герой */
+.hero {
+  background-color: var(--brand-color);
+  text-align: center;
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin-bottom: 94px;
+}
 
 .hero-title {
-  background-color: var(--brand-color);
   color: var(--wite-color);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-right: 200px;
+  margin-left: 200px;
 }
 
 .button-hero {
@@ -176,6 +180,24 @@ address {
 }
 
 /* презентация */
+.main:not(:last-child) {
+  display: flex;
+}
+  .maim{
+  padding-top: 94px;
+  margin-left: 200px;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.content {
+  display: flex;
+}
+
+.box {
+  width: 270px;
+  height: 101px;
+}
 
 .section-subtitle {
   font-weight: 700;
@@ -213,6 +235,7 @@ address {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 
 /* команда */
