@@ -36,6 +36,7 @@ body {
   font-family: Roboto, raleway, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  min-width: 1600px;
 }
 
 .list {
@@ -52,13 +53,23 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+padding-right: 15px;
 }
 
+.container-boss{
+
+}
+
+
 .header-box {
+  background-color: var(--wite-color);
   display: flex;
-  width: 1200px;
   border-bottom: 1px solid var(--header-line);
 justify-content: space-between;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .nav-box {
@@ -92,7 +103,13 @@ justify-content: space-between;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  padding-right: 93px;
+}
+
+
+.logo-nav{
+  margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .logo-footer {
@@ -158,11 +175,17 @@ address {
 }
 
 /* герой */
+.fon-hero{
+  background-color: var(--brand-color);
+}
+
 .hero {
   background-color: var(--brand-color);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -195,7 +218,7 @@ address {
 .box {
   display: flex;
   width: 270px;
-  height: 101px;
+  margin-right: 30px;
 }
 
 .section-subtitle {
@@ -231,22 +254,28 @@ address {
   line-height: 1.16;
   text-align: center;
   padding-bottom: 50px;
+  margin: 0;
   
 }
 
 
+.box-imag{
+  background-color: var(--wite-color);
+}
+
 .imag{
+  background-color: var(--wite-color);
   display: flex;
-  width: 1200px;
   justify-content: space-between;
 }
 
 /* команда */
 .fon-page{
   background-color: var(--header-line);
-  margin-left: auto;
-  margin-right: auto;
+padding-top: 94px;
+padding-bottom: 94px;
 }
+
 
 .section-team{
 display: flex;
@@ -254,9 +283,13 @@ justify-content: center;
 }
 
 
-.box-team :not(:last-child){
-  padding-left: 30px;
-
+.box-team{
+background: var(--wite-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.box-team:not(:last-child){
+  margin-right: 30px;
 }
 
 
@@ -315,8 +348,7 @@ justify-content: center;
 
 
 .nav-footer{
- background-color: var(--footer);
-  padding-left: 215px;
+  background-color: var(--footer);
   padding-top: 60px;
   padding-bottom: 60px;
   
@@ -328,6 +360,6 @@ justify-content: center;
 }
 
 .logo-footer{
- padding-top: 60px;
- padding-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
