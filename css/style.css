@@ -64,8 +64,6 @@ padding-right: 15px;
   display: flex;
   border-bottom: 1px solid var(--header-line);
 justify-content: space-between;
-padding-top: 32px;
-padding-bottom: 32px;
 }
 
 .nav-box {
@@ -77,12 +75,14 @@ padding-bottom: 32px;
   justify-content: flex-end;
 }
 
+.link:not(:last-child) {
+  padding-right: 50px;
+}
+
 .item {
   display: flex;
   align-items: center;
-}
-.link:not(:last-child) {
-  padding-right: 50px;
+  padding: 32px 25px;
 }
 
 /* логотип */
@@ -103,9 +103,9 @@ padding-bottom: 32px;
 
 
 .logo-nav{
-  margin-right: 93px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+padding-right: 93px;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 .logo-footer {
@@ -150,6 +150,7 @@ address {
   font-style: normal;
   font-weight: 500;
   text-decoration: none;
+padding: 32px,25px;
 }
 .contact-heder:hover,
 :focus {
