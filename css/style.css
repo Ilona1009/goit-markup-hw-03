@@ -9,6 +9,7 @@
   --black: #000000;
   --header-line: rgba(236, 236, 236, 1);
   --footer: #2F303A;
+  --border-card:#EEEEEE;
 }
 
 html {
@@ -50,12 +51,16 @@ body {
   margin-bottom: 94px;
 }
 
+.heder{
+  background-color: var(--wite-color);
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
-padding-right: 15px;
+  padding-right: 15px;
 }
 
 
@@ -82,7 +87,6 @@ justify-content: space-between;
 .item {
   display: flex;
   align-items: center;
-  padding: 32px 25px;
 }
 
 /* логотип */
@@ -201,25 +205,29 @@ padding: 32px,25px;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  border: none;
-  width: 200px;
-  height: 50px;
+  text-align: center;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+    border: 0 transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
+
 
 /* презентация */
 .content-body {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
 }
 
-.box {
-  display: flex;
+
+.box{  
   width: 270px;
+}
+.box:not(:last-child){
   margin-right: 30px;
 }
+
 
 .section-subtitle {
   font-weight: 700;
@@ -233,6 +241,7 @@ border-radius: 4px;
   font-size: 18px;
   line-height: 2;
 }
+
 
 .section-text {
   color: var(--contact-color);
@@ -310,11 +319,13 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
-/* новигация */
+/* нaвигация */
+
 
 .section-button {
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
 
 .button-navigate {
@@ -325,13 +336,26 @@ border-radius: 0px 0px 4px 4px;
   color: var(--brand-color);
   cursor: pointer;
   border: none;
+  padding: 6px, 22px;
 }
-
 .button-navigate:hover,
 .button-navigate:focus {
   background: var(--accent-color);
   color: var(--wite-color);
 }
+
+
+.button-list{
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+
+.btn:not(:last-child){
+  margin-right: 8px;
+}
+
 
 .visually-hidden {
   position: absolute;
@@ -363,3 +387,26 @@ border-radius: 0px 0px 4px 4px;
   margin-top: 60px;
   margin-bottom: 20px;
 }
+
+/* portfolio page */
+
+.cards-work{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+width: 370px;
+background:var(--wite-color);
+border: 1px solid var(--border-card);
+padding: 0;
+margin-right: 30px;
+margin-bottom: 30px;
+}
+.card:nth-child(3n){
+  margin-right: 0;
+}
+.card:nth-last-child(-n+3){
+  margin-bottom: 0;  
+}
+
