@@ -402,25 +402,8 @@ border-radius: 0px 0px 4px 4px;
 
 .cards-work{
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-set-gap);
-  flex-basis: calc((100% - 30px) / 3);
-   margin-right: calc(-1 * var(--card-set-gap));
-   margin-bottom: calc(-1 * var(--card-set-gap));
+flex-wrap:wrap ;
+gap: var(--card-set-gap)
 }
 
-.card{
-width: 370px;
-background:var(--wite-color);
-border-left:1px solid var(--border-card);
-border-right:1px solid var(--border-card);
-border-bottom: 1px solid var(--border-card);
-padding: 0;
-}
-/* .card:nth-child(3n){
-  gap: 0;
-}
-.card:nth-last-child(-n+3){
-  gap: 0;  
-} */
 
