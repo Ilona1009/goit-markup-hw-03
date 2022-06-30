@@ -53,6 +53,7 @@ body {
 
 .heder{
   background-color: var(--wite-color);
+   border-bottom: 1px solid var(--header-line);
 }
 
 .container {
@@ -67,7 +68,7 @@ body {
 .header-box {
   background-color: var(--wite-color);
   display: flex;
-  border-bottom: 1px solid var(--header-line);
+ 
 justify-content: space-between;
 }
 
@@ -406,7 +407,9 @@ border-radius: 0px 0px 4px 4px;
 .card{
 width: 370px;
 background:var(--wite-color);
-border: 1px solid var(--border-card);
+border-left:1px solid var(--border-card);
+border-right:1px solid var(--border-card);
+border-bottom: 1px solid var(--border-card);
 padding: 0;
 margin-right: 30px;
 margin-bottom: 30px;
