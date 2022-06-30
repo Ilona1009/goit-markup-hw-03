@@ -10,6 +10,7 @@
   --header-line: rgba(236, 236, 236, 1);
   --footer: #2F303A;
   --border-card:#EEEEEE;
+  --card-set-gap: 30px;
 }
 
 html {
@@ -53,7 +54,7 @@ body {
 
 .heder{
   background-color: var(--wite-color);
-   border-bottom: 1px solid var(--header-line);
+  border-bottom: 1px solid var(--header-line);
 }
 
 .container {
@@ -402,6 +403,10 @@ border-radius: 0px 0px 4px 4px;
 .cards-work{
   display: flex;
   flex-wrap: wrap;
+  gap: var(--card-set-gap);
+  flex-basis: calc((100% - 30px) / 3);
+   margin-right: calc(-1 * var(--card-set-gap));
+   margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
 .card{
@@ -411,13 +416,11 @@ border-left:1px solid var(--border-card);
 border-right:1px solid var(--border-card);
 border-bottom: 1px solid var(--border-card);
 padding: 0;
-margin-right: 30px;
-margin-bottom: 30px;
 }
-.card:nth-child(3n){
-  margin-right: 0;
+/* .card:nth-child(3n){
+  gap: 0;
 }
 .card:nth-last-child(-n+3){
-  margin-bottom: 0;  
-}
+  gap: 0;  
+} */
 
