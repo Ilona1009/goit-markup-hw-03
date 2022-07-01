@@ -403,7 +403,10 @@ border-radius: 0px 0px 4px 4px;
 .cards-work{
   display: flex;
 flex-wrap:wrap ;
-gap: var(--card-set-gap)
+gap: var(--card-set-gap) 
 }
 
 
+.box-team img{
+  display: block;
+}
